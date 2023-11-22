@@ -15,9 +15,33 @@ $body = "This HTTP triggered function executed successfully. Pass a name in the 
 
 
 
-if ($name) {
-    $body = "Jo, $name $($MyInvocation.MyCommand.Path) test"
-}
+
+
+$body = @"
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Calculator</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script src=""></script>
+<body>
+
+<img src="img_la.jpg" alt="LA" style="width:100%">
+
+<div class="">
+ <h1>This is a Heading</h1>
+ <p>This is a paragraph.</p>
+ <p>This is another paragraph.</p>
+</div>
+
+</body>
+</html>
+
+
+"@
 #$body = $(Get-Content -Path "./template.html")
 
 # Associate values to output bindings by calling 'Push-OutputBinding'.
