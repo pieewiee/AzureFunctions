@@ -16,7 +16,7 @@ $body = "This HTTP triggered function executed successfully. Pass a name in the 
 
 
 if ($name) {
-    $body = "Jo, $name $($MyInvocation.MyCommand.Path)"
+    $body = "Jo, $name $($MyInvocation.MyCommand.Path) test"
 }
 #$body = $(Get-Content -Path "./template.html")
 
