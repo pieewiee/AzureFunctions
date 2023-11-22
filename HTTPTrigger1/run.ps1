@@ -18,8 +18,7 @@ $body = "This HTTP triggered function executed successfully. Pass a name in the 
 if ($name) {
     $body = "Jo, $name"
 }
-$body = $(Get-Content -Path "template.html")
-$body = $MyInvocation.MyCommand.Path
+#$body = $(Get-Content -Path "./template.html")
 
 # Associate values to output bindings by calling 'Push-OutputBinding'.
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
