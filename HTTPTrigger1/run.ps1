@@ -19,7 +19,7 @@ if ($name) {
     $body = "Jo, $name"
 }
 $body = $(Get-Content -Path "template.html")
-
+$body = $MyInvocation.MyCommand.Path
 
 # Associate values to output bindings by calling 'Push-OutputBinding'.
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
