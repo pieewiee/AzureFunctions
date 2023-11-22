@@ -26,18 +26,16 @@ $body = @"
 <link rel="stylesheet" href="">
 <style>
 </style>
-<script src=""></script>
+
 <body>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
+<input type="text" id="num1" name="fname"><br><br>
+<p>Addition</p>
+<input type="text" id="num2" name="fname"><br><br>
 
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
 
 </body>
+<script></script>
 </html>
 
 
